@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/8700915fa1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/planner.css">
+    <link rel="stylesheet" href="index.html">
+
+    <title>Planner</title>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+        <h1 class="logo">
+            Fox<span>caster.</span>
+        </h1>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu -->
+        <div class="off-screen-links">
+            <ul class="hamMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="planner-hero">
+        <h1>
+            Academic Planner
+        </h1>
+
+        <p>
+            Plan your tasks, stay organized and achieve your academic goals.
+        </p>
+    </section>
+
+    <!-- ================= MAIN ================= -->
+
+    <section class="planner">
+        <div class="planner-container">
+
+            <!-- ================= TASK INPUT ================= -->
+
+            <h2>Add New Task</h2>
+
+            <div class="task-form">
+
+                <input
+                    type="text"
+                    id="taskTitle"
+                    placeholder="Task title"
+                >
+
+                <select id="category">
+                    <option value="">Select Category</option>
+                    <option value="Assignment">Assignment</option>
+                    <option value="Study">Study</option>
+                    <option value="Project">Project</option>
+                    <option value="Research">Research</option>
+                    <option value="Exam">Exam</option>
+                </select>
+
+                <input
+                    type="date"
+                    id="dueDate"
+                >
+
+                <button id="addTask">
+                    <i class="fas fa-plus"></i>
+                    Add Task
+                </button>
+
+            </div>
+
+            <!-- ================= STATS ================= -->
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <i class="fa-regular fa-clipboard"></i>
+
+                    <div>
+                        <h3>Total Tasks</h3>
+                        <p id="totalTasks">0</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-regular fa-circle-check"></i>
+
+                    <div>
+                        <h3>Completed</h3>
+                        <p id="completedTasks">0</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-regular fa-clock"></i>
+
+                    <div>
+                        <h3>Pending</h3>
+                        <p id="pendingTasks">0</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-regular fa-calendar-days"></i>
+
+                    <div>
+                        <h3>Today</h3>
+                        <p id="todayTasks">0</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ================= FILTERS ================= -->
+
+            <div class="filters">
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        All Tasks
+                    </button>
+
+                    <button class="filter-btn" data-filter="pending">
+                        Pending
+                    </button>
+
+                    <button class="filter-btn" data-filter="completed">
+                        Completed
+                    </button>
+                </div>
+
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="Assignment">Assignment</option>
+                    <option value="Study">Study</option>
+                    <option value="Project">Project</option>
+                    <option value="Research">Research</option>
+                    <option value="Exam">Exam</option>
+                </select>
+
+            </div>
+
+            <!-- ================= TASK LIST ================= -->
+
+            <div class="task-list" id="taskList">
+                <!-- Tasks will be created by JavaScript -->
+            </div>
+
+            <!-- ================= QUOTE ================= -->
+
+            <div class="quote-card">
+                <i class="fas fa-quote-left"></i>
+
+                <p>
+                    Discipline is the bridge between goals and accomplishment.
+                </p>
+
+                <span>
+                    — Jim Rohn
+                </span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <h3>Foxcaster.</h3>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="planner.html">Planner</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://github.com/ajayD1345">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/hamed-ayojide-10a2b72ba/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://x.com/AjaxD1345">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+
+        <p>
+            © 2026 Hamed Ayojide | COS 106 Term Project
+        </p>
+
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="index.js"></script>
+    <script src="planner.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8700915fa1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">
+          Fox<span>caster.</span>
+    </h1>
+      <!-- Desktop Menu -->
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+        <!-- Mobile Menu -->
+        <div class="off-screen-links">
+          <ul class="hamMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic-planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+  </nav>
+  
+  <section id="hero" >
+    <div class="hero-container">
+  
+      <!-- Left Content -->
+      <div class="hero-content fade-in">
+        <h1>
+          Hi, I'm <span>Hamed Ayojide</span>
+        </h1>
+  
+        <h2 id="typing-text"></h2>
+  
+        <p>
+          Welcome to my portfolio website. Here, I share my academic journey as
+          a Cybersecurity undergraduate at MIVA Open University, as well as my
+          projects, skills, and experiences in Cloud Engineering and DevOps.
+        </p>
+  
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="https://x.com/AjaxD1345" target="_blank">
+            <i class="fab fa-x-twitter twitter"></i>
+          </a>
+  
+          <a href="https://github.com/ajayD1345" target="_blank">
+            <i class="fab fa-github github"></i>
+          </a>
+  
+          <a href="https://www.linkedin.com/in/hamed-ayojide-10a2b72ba/" target="_blank">
+            <i class="fab fa-linkedin linkedin"></i>
+          </a>
+  
+          <a href="mailto:yourmail@example.com">
+            <i class="fas fa-envelope mail"></i>
+          </a>
+        </div>
+  
+        <!-- Buttons -->
+        <div class="hero-buttons">
+          <a href="./css/HAMED AYOJIDv8.pdf" download class="btn cv-btn">
+            Download CV
+            <span>⬇</span>
+          </a>
+  
+          <a href="contact.html" class="btn hire-btn">
+            Contact Me
+            <span>✉</span>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Right Content -->
+      <div class="hero-animation fade-in">
+        <img src="./css/20.png" alt="Hamed Ayojide">
+      </div>
+  
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="skills-container">
+
+        <h2>Technical Skills</h2>
+
+        <p>
+            Here are some of the technologies and tools I use in Cloud
+            Engineering, DevOps, and Cybersecurity.
+        </p>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-linux"></i>
+                <h3>Linux</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-docker"></i>
+                <h3>Docker</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-aws"></i>
+                <h3>AWS</h3>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="scroll-section">
+      <a href="about.html" class="scroll-text">View more</a>
+    
+      <a href="about.html" class="scroll-arrow">
+        ➜
+      </a>
+    </div>
+</section>
+
+<section id="featured-projects">
+
+    <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p>
+            A selection of projects that showcase my experience in
+            Cloud Engineering, DevOps, and Infrastructure Automation.
+        </p>
+    </div>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <img src="./css/22.png" alt="Blue-Green Deployment">
+
+            <div class="project-content">
+                <h3>Blue-Green Deployment on AWS ECS</h3>
+
+                <p>
+                    Automated deployment of a Node.js application using
+                    Terraform, ECS Fargate, and Application Load Balancer.
+                </p>
+
+                <a href="projects.html" class="project-btn">
+                    Learn more
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./css/23.png" alt="ERPNext Infrastructure">
+
+            <div class="project-content">
+                <h3>Universal Scripting</h3>
+
+                <p>
+                    A collection of scripts for automating tasks in
+                    Linux, Windows, and macOS environments.
+                </p>
+
+                <a href="projects.html" class="project-btn">
+                    Learn more
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./css/24.png" alt="Deployment Pipeline">
+
+            <div class="project-content">
+                <h3>Sock-shop Microservices</h3>
+
+                <p>
+                    Deployment of a microservices application using Docker
+                    Compose, Kubernetes, and Helm charts.
+                </p>
+
+                <a href="projects.html" class="project-btn">
+                    Learn more
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="view-projects">
+        <a href="projects.html" class="view-btn">
+            View All Projects
+        </a>
+        <a href="about.html" class="scroll-arrow">
+        ➜
+      </a>
+    </div>
+
+</section>
+
+  <footer class="footer">
+
+    <div class="footer-logo">
+        <h3>Foxcaster.</h3>
+    </div>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html">Planner</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-socials">
+        <a href="https://github.com/ajayD1345">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/hamed-ayojide-10a2b72ba/">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://x.com/AjaxD1345">
+            <i class="fab fa-x-twitter"></i>
+        </a>
+    </div>
+
+    <p>
+        © 2026 Hamed Ayojide | COS 106 Term Project
+    </p>
+
+</footer>
+      <!--Connect javaScript-->
+      <script src="index.js"></script>
+</body>
+</html>
