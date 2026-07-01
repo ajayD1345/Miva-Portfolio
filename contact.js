@@ -6,12 +6,12 @@ const form = document.getElementById("contactForm");
 
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
-const subjectInput = document.getElementById("subject");
+const phoneInput = document.getElementById("phone");
 const messageInput = document.getElementById("message");
 
 const nameError = document.getElementById("nameError");
 const emailError = document.getElementById("emailError");
-const subjectError = document.getElementById("subjectError");
+const phoneError = document.getElementById("phoneError");
 const messageError = document.getElementById("messageError");
 
 // ===============================
@@ -87,21 +87,29 @@ function validateEmail() {
 
 }
 
-function validateSubject() {
+function validatePhone() {
+    const value = phoneInput.value.trim();
 
-    const value = subjectInput.value.trim();
-
+    // Check if empty
     if (value === "") {
-
-        showError(subjectInput, subjectError, "Subject is required.");
+        showError(phoneInput, phoneError, "Phone number is required.");
         return false;
-
     }
 
-    showSuccess(subjectInput, subjectError);
+    // Check if it contains only digits
+    if (!/^\d+$/.test(value)) {
+        showError(phoneInput, phoneError, "Phone number must contain only numbers.");
+        return false;
+    }
 
+    // Check if it is exactly 11 digits
+    if (value.length !== 11) {
+        showError(phoneInput, phoneError, "Phone number must be exactly 11 digits.");
+        return false;
+    }
+
+    showSuccess(phoneInput, phoneError);
     return true;
-
 }
 
 function validateMessage() {
