@@ -71,12 +71,7 @@ student-portfolio/
 ## 🚀 Live Demo
 
 **Website:**  
-https://your-project.pages.dev
-
-## 💻 GitHub Repository
-
-**Repository:**  
-https://github.com/your-username/student-portfolio
+https://ajayd1345.github.io/Miva-Portfolio
 
 ## 📱 Responsive Design
 
